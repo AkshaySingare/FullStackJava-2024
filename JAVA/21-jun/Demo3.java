@@ -6,5 +6,4 @@ public class Demo3{
 	
 	System.out.println(var1 + "  " +var2);
 }
-
 }
