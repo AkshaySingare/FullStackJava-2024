@@ -1,0 +1,51 @@
+/*	Write a function to find the longest common prefix string amongst an array of strings.
+	If there is no common prefix, return an empty string "".	*/
+
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        char ch1[] = new char[strs[0].length()];
+        char ch2[] = new char[strs[1].length()];
+        char ch3[] = new char[strs[2].length()];
+
+        for (int j = 0; j < strs[0].length(); j++) {
+            ch1[j] = strs[0].charAt(j);
+            // ch1[] = strs[0].toCharArray
+        }
+
+        for (int i = 0; i < ch2.length; i++) {
+            ch2[i] = strs[1].charAt(i);
+        }
+        for (int i = 0; i < ch3.length; i++) {
+            ch3[i] = strs[2].charAt(i);
+        }
+
+        //optional
+        int small=ch1.length;
+        small = Math.min(small, ch2.length);
+        small = Math.min(small, ch3.length);
+
+        //main code 
+        String str="";
+        for (int i = 0; i<small; i++) { // condition based on small word
+            if (ch1[i] == ch2[i]) { //to Compare charecters ch1 and ch2
+                if (ch2[i]==ch3[i]) {
+                    str = str+ch1[i];
+                }
+            }
+            else{
+                break;      //Becuse Prefix alwes have in fornt sides if not then its not prefix
+            }
+        }
+        return str;
+    }
+}
+
+public class Demo {
+    public static void main(String x[]) {
+        String str[] = { "okjaan", "okdarling", "okboss" };
+        Solution s = new Solution();
+
+        // s.longestCommonPrefix(str);
+        System.out.println(s.longestCommonPrefix(str));
+    }
+}

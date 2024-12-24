@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navbar {
+	top: 3%;
+	left: 10%;
+	position: absolute;
+	gap: 60px;
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.container {
+	position: absolute;
+	top: 11%;
+	height: 80%;
+	width: 100%;
+	background-image: url(task2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#Contact {
+	margin: 0px 16vw 0px 0px;
+	position: relative;
+}
+
+.container h1 {
+	color: white;
+	position: relative;
+	top: 43%;
+	left: 20%;
+	font-size: 40px;
+}
+
+.container p {
+	color: white;
+	position: relative;
+	top: 46%;
+	left: 20%;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+input {
+	position: relative;
+	top: 51%;
+	padding: 13px 12px;
+	left: 22%;
+	border: none;
+	border-radius: 10px;
+	font-weight: 900;
+	background-color: black;
+	color: white;
+}
+
+.page2 {
+	/* background-color: rebeccapurple; */
+	height: 60vh;
+	position: absolute;
+	top: 95%;
+	width: 100%;
+}
+
+.page2 h1 {
+	text-align: center;
+	margin: 0px 10% 1.5% 0px
+}
+
+.boxes {
+
+	display: flex;
+	justify-content: center;
+}
+
+.box {
+	height: 45vh;
+	width: 30vw;
+}
+
+.box1 {
+	flex-basis: 15%;
+}
+
+.box2 {
+
+	background-image: url(task2.jpeg);
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+
+}
+
+.box1 p {
+	font-weight: 600;
+	margin-right: 6%;
+	color: gray;
+	line-height: 30px;
+	position: relative;
+        left: 85px;
+        top: 22vh;
+}
+
+.box1 p::first-line {
+	color: orange;
+}
+
+.box3 p {
+	position: relative;
+	left: 3%;
+	top: 3%;
+}
+
+.p1 {
+	color: black;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+.p2 {
+	font-size: 15px;
+	color: grey;
+	width: 29vw;
+}
+
+.boxes small {
+	margin: 3%;
+}
+
+.page3 {
+	background-color: azure;
+	height: 55vh;
+	position: relative;
+	top: 150vh;
+	background-image: url(task2.jpeg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.page3 div>p {
+	color: gray;
+	position: relative;
+	left: 28vw;
+	font-weight: 100;
+	top: 40vh;
+	display: inline-block;
+}
+.page3 div > h1{
+	position: relative;
+	left: 50vw;
+	font-weight: 800;
+	top: 24vh;
+	display: inline-block;
+}
+.page3 div p small{
+	font-weight: 400;
+}

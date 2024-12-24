@@ -1,0 +1,421 @@
+// Q1.  program to find maximum between two numbers.
+
+import java.util.Scanner;
+
+public class max {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a, b;
+        System.out.println("Enter A and B values ");
+        a = sc.nextInt();
+        b = sc.nextInt();
+
+        String str = a == b ? "A and B both are Equals " : a > b ? "A is Greter " : " B is Greter ";
+        System.out.println(str);
+    }
+}
+
+// Q2. program to find maximum between three numbers.
+
+import java.util.*;
+
+public class max3num {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a, b, c;
+        System.out.println("Enter Values A, B and C");
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+
+        String str = (a == b && b == c) ? "A, B and C are equals "
+                : (a > b && a > c) ? "A is Greter " : (b > c && b > a) ? " B is Greter " : "C is Greter";
+        System.out.println(str);
+    }
+}
+
+//  Q3. program to check whether a number is negative, positive or zero.
+
+import java.util.Scanner;
+
+public class CheckChar {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Values ");
+        char ch = sc.next().charAt(0);
+        String str = (ch>=48 && ch<=57) ? " Integer " : (ch>=65 && ch<=90 || ch>=97 && ch<=122) ? "Alphabet " : "Special Charecter ";
+        System.out.println(str);
+    }
+}
+
+// Q4. program to check whether a number is divisible by 5 and 11 or not.
+
+import java.util.Scanner;
+
+public class diviby5_11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter Number ");
+        int num = sc.nextInt();
+        String str = num % 5 == 0 && num % 11 == 0 ? "Number divisiable by 5 and 11 "
+                : num % 5 == 0 ? "Num is divisiable by 5"
+                        : num % 11 == 0 ? "num is divisiable by 11 " : "Not Divisiable ";
+        System.out.println(str);
+    }
+}
+
+// Q5. program to check whether a number is even or odd.
+
+import java.util.Scanner;
+
+public class demo {
+    public static void main(String x[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number ");
+        int num = sc.nextInt();
+        if (num%2==0) {
+            System.out.println("Even Number ");
+        }
+        else{
+            System.out.println("Odd Number ");
+        }
+    }
+}
+
+//  Q6. program to check whether a year is leap year or not.
+
+import java.util.Scanner;
+
+public class Leaf {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enetr Year ");
+        int year = sc.nextInt();
+
+        String str = year % 4==0 ? "Leaf Year " : "Not Leaf Year ";
+        System.out.println(str);
+    }
+}
+
+// Q18. WAP  program to find frequency of each digit in a given integer
+
+import java.util.*;
+
+public class Q18 {
+	public static void main(String x[]) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number ");
+		int num = sc.nextInt();
+
+		int rem = 0, temp = 0, count = 0;
+		for (int i = 0; i <= 9; i++) {
+			temp = num;
+			count = 0;
+			while (temp != 0) {
+				 rem = temp % 10;
+				if (rem == i) {
+					++count;
+				}
+				temp /= 10;
+			}
+			if (count > 0) {
+				System.out.println(i + "--------->" + count);
+			}
+		}
+	}
+}
+
+//19.	Write a C program to enter a number and print it in words. 
+
+import java.util.*;
+public class demo1
+{
+	public static void main(String args[])
+	{
+		Scanner xyz=new Scanner (System.in);
+		System.out.println("Enter Number?");
+		int num=xyz.nextInt();
+
+		int rem=0;
+		while(num!=0)
+		{
+			rem=num%10;
+			
+			switch(rem)
+			{
+				case 0 :	System.out.println("Zero");break;
+				case 1 :	System.out.println("One");break;
+				case 2 :	System.out.println("Two");break;
+				case 3 :	System.out.println("Three");break;
+				case 4 :	System.out.println("Four");break;
+				case 5 :	System.out.println("Five");break;
+				case 6 :	System.out.println("Six");break;
+				case 7 :	System.out.println("Seven");break;
+				case 8 :	System.out.println("Eight");break;
+				case 9 :	System.out.println("Nine");break;
+
+			}
+
+
+			num=num/10;
+		}
+	}
+}
+
+//     20.	Write a C program to print all ASCII character with their values. 
+public class demo {
+    public static void main(String[] args) {
+        System.out.println("Assci----->Values");
+        for(int i=0;i<=256;i++){
+            System.out.println(i+" ---------> "+(char)i);
+        }
+    }
+}
+
+//  21.	Write a C program to find power of a number using for loop. 
+
+import java.util.Scanner;
+
+public class demo {
+     public static void main(String[] args) {
+        int index,p=1,base;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Index and Base");
+        index =sc.nextInt();
+        base=sc.nextInt();
+        for(int i=1;i<=index;i++){
+            p=base*p;
+        }
+        System.out.println("power is"+p);
+        
+     }
+}
+
+//  22.	Write a C program to find all factors of a number. 
+
+import java.util.*;
+
+public class Q22 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number ");
+        int num = sc.nextInt();
+
+        System.out.println("Factorial is ");
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
+//  23.	Write a  program to calculate factorial of a number
+
+import java.util.*;
+
+public class Q23 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number ");
+        int num = sc.nextInt();
+
+        int ans = 1;
+        System.out.println("Calculted all Factorial is ");
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                ans *= i;
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("\n\n Calculated factorial is " + ans);
+    }
+}
+//  24.	Write a C program to find HCF (GCD) of two numbers.
+
+import java.util.*;
+public class Q24{
+  public static void main(String x[]){
+	
+	int n1,n2,gcd=0;
+	Scanner sc=new Scanner(System.in);
+	
+	System.out.print("Enter Num1 and num2  ");
+	n1=sc.nextInt();
+	n2=sc.nextInt();
+	while(n1!=n2){
+	  if(n1>n2){
+		  n1-=n2;
+			}
+		else{
+			n2-=n1;
+		}
+	}
+        	System.out.println(n1);
+}
+}
+
+//    25. Write a C program to find LCM of two numbers.
+
+import java.util.*;
+public class Q25{
+public static void main(String x[]){
+
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Num1");
+	int num1=sc.nextInt();
+	System.out.println("Enter Num2");
+	int num2=sc.nextInt();
+	int lcm;
+	int gcd;
+	if(num1>num2){
+	 gcd=num1-num2;
+	}else{
+	 gcd=num2-num1;
+	}
+
+	lcm=(num1*num2)/gcd;
+	System.out.println("Lcm is "+lcm);
+}
+}
+//     26.	Write a C program to check whether a number is Prime number or not. 
+
+import java.util.*;
+public class Q26 {
+    public static void main(String[] args) {
+        int num, count = 0, i;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number to check prime or not");
+        num = sc.nextInt();
+
+        for (i = 1; i <= num; i++)
+        {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            System.out.println("Prime Number ");
+        } else {
+            System.out.println("NOt Prime Number ");
+        }
+    }
+}
+//  27.	Write a C program to print all Prime numbers between 1 to n. 
+
+import java.util.*;
+
+public class Q27 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number to print Prime Numbers ");
+        int i, temp = 0;
+        int num = sc.nextInt();
+
+        for (i = 1; i <= num; i++) {
+            for (int j = 2; j < i; j++) {
+                if(i%j==0){
+                    temp=1;
+                }
+            }
+            if(temp==0){
+                System.out.println(i);
+            }else{
+                temp=0;
+            }
+        }
+    }
+}
+//  28.	Write a C program to find sum of all prime numbers between 1 to n.
+
+import java.util.*;
+public class demo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number ");
+        int num=sc.nextInt();
+        int i,j,temp=0,sum=0;
+        for(i=1;i<=num;i++){
+            for(j=2;j<i;j++){
+                if(i%j==0){
+                    temp=1;
+                }
+            }
+            if (temp==0) {
+                sum+=i;
+            }else{
+                temp=0;
+            }
+        }
+        System.out.printf("Sum of %d prime number is %d",num,sum);
+    }
+}
+
+// 29.	Write a C program to find all prime factors of a number. 
+import java.util.*;
+
+public class Q29 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i, j, temp = 0, num, factors;
+        System.out.println("Enter Number to find Prime Factorial ");
+        num = sc.nextInt();
+
+        System.out.println("All factorial of a Number ");
+        for(i=1;i<num;i++){
+            if(num%i==0){
+                System.out.println(i);
+            }
+        }
+System.out.println("Prime Factors ");
+        for (i = 1; i < num; i++) {
+            if (num % i == 0) {
+                for (j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        temp = 1;
+                    }
+                }
+                if (temp == 0) {
+                    System.out.println(i);
+                } else {
+                    temp = 0;
+                }
+            }
+        }
+    }
+}
+
+// 30.	Write a C program to check whether a number is Armstrong number or not.
+import java.util.*;
+
+public class Q30 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number to Check ArmStrong or Not ");
+        int num = sc.nextInt();
+        int temp = num, temp2 = num;
+        int count = 0, Arm = 0, rem = 0, mult = 1;
+        while (temp2 != 0) {
+            count++;
+            temp2 = temp2 / 10;
+        }
+
+        while (num != 0) {
+            rem = num % 10;
+            num = num / 10;
+           mult=1;
+            for (int i=1; i <= count; i++) {
+                mult = mult * rem;
+            }
+            Arm=Arm+mult;
+        }
+        if(Arm==temp){
+            System.out.printf("%d its an ArmStrong Number ",temp);
+        }else{
+            System.out.println(" its Not ArmStrong Number "+temp);
+        }
+    }
+    }

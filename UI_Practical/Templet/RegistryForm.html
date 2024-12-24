@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            background-color: rgb(196, 128, 239);
+        }
+
+        #Container {
+            outline: none;
+            position: relative;
+            top: 17%;
+            left: 31%;
+            height: 78vh;
+            width: 39vw;
+            background-color: azure;
+        }
+
+        div p {
+            font-size: 25px;
+            margin: 15px 0px 0px 20px;
+            padding: 19px 0px 0px 0px;
+        }
+
+        div p span {
+            text-decoration: underline;
+            text-decoration-color: rgb(196, 128, 239);
+
+        }
+
+        input[data='l'] {
+            outline: none;
+            padding: 13px 40px 6px 18px;
+            margin: 0px 5px 5px 10px;
+            position: relative;
+            top: 11.5%;
+        }
+
+        input[data='r'] {
+            outline: none;
+            position: relative;
+            left: 41%;
+            padding: 11px 40px 8px 18px;
+            top: 4%;
+        }
+
+        .span {
+            margin-left: 12px;
+            position: relative;
+            top: 12%;
+        }
+
+        .span2 {
+            position: relative;
+            top: 6%;
+            left: 2%;
+            padding: 0px;
+            margin: 0px;
+        }
+        #btn{
+            border: none;
+            border-radius: 5px;
+            background-color:  rgb(196, 128, 239);;
+            position: relative;
+            top: 2%;
+            padding: 10px 34%;
+            left: 2.5%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="Container">
+        <p><span>Re</span>gistration</p>
+        <span class="span">Full Name</span>
+        <br>
+        <input data="l" type="text" placeholder="Enter your name">
+        <span class="span2">Username</span>
+        <br>
+        <input data="r" type="text" placeholder="Enter your Username">
+        <span class="span" style=" position:relative; right:37%">Email</span>
+        <br>
+        <input data="l" type="email" placeholder="Enter your Email">
+        <span class="span2">Phone Number</span>
+        <br>
+        <input data="r" type="number" name="" placeholder="Enter your Number">
+        <br>
+        <span class="span">Password</span>
+        <br>
+        <input data="l" type="password" placeholder="Enter your password">
+        <span class="span2" >Confirm Password</span>
+        <br>
+        <input data="r" type="password" placeholder="Confirm Password" name=""> <br><br><br>
+        <span style="position: relative; left: 8%; bottom: 1%; font-size: 22px;">Gender</span> <br>
+        <span style="margin: 30px 0px 30px 30px;"><input type="radio"> Male </span>
+        <span style="margin: 30px 30px 30px 0px;"></span> <input type="radio"> Female </span>
+        <span style="margin: 30px ;"><input type="radio"> Prefer not to stay</span>
+        <br>
+        <input id="btn" type="button" value="Register">
+    </div>
+</body>
+
+</html>
