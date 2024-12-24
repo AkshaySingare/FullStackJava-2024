@@ -18,16 +18,14 @@ class Solution {
         for (int i = 0; i < ch3.length; i++) {
             ch3[i] = strs[2].charAt(i);
         }
-
-        //optional
         int small=ch1.length;
         small = Math.min(small, ch2.length);
         small = Math.min(small, ch3.length);
 
-        //main code 
+        //  main code 
         String str="";
         for (int i = 0; i<small; i++) { // condition based on small word
-            if (ch1[i] == ch2[i]) { //to Compare charecters ch1 and ch2
+            if (ch1[i] == ch2[i]) {     //to Compare charecters ch1 and ch2 array
                 if (ch2[i]==ch3[i]) {
                     str = str+ch1[i];
                 }
@@ -39,16 +37,21 @@ class Solution {
         return str;
     }
 }
-
 public class Demo {
     public static void main(String x[]) {
-        String str[] = { "okjaan", "okdarling", "okboss" };
+        String str[] = { "flower", "flow", "flight" };
         Solution s = new Solution();
 
         // s.longestCommonPrefix(str);
         System.out.println(s.longestCommonPrefix(str));
     }
 }
+
+/*  Q2.  Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+      You may assume that each input would have exactly one solution, and you may not use the same element twice.
+      You can return the answer in any order.
+      Input: nums = [2,7,11,15], target = 9
+      Output: [0,1]           */
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -66,12 +69,6 @@ class Solution {
         return new int[] {};
     }
 }
-/*    Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-      You may assume that each input would have exactly one solution, and you may not use the same element twice.
-      You can return the answer in any order.
-      Input: nums = [2,7,11,15], target = 9
-      Output: [0,1]           */
-
 public class Sum{
     public static void main(String x[]){
         int num[] = {2,7,11,15};
@@ -84,7 +81,7 @@ public class Sum{
     }
 }
 /*
-    Given an integer x, return true if x is a palindrome, and false otherwise.
+   Q3. Given an integer x, return true if x is a palindrome, and false otherwise.
     Input: x = 121
     Output: true
 */
