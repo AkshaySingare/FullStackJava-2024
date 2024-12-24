@@ -1,0 +1,114 @@
+// 	WAP to enter the five elements in array and calculate the sum of all elements
+
+import java.util.*;
+public class Q1{
+public static void main(String x[]){
+	Scanner sc=new Scanner(System.in);
+  
+ 	int a[]=new int [5];
+	int sum=0;
+	System.out.println("Enter 5 values of arrya");
+	for(int i=0;i<5;i++){
+	   a[i]=sc.nextInt();
+	 }
+	for(int i=0;i<5;i++){
+	 sum=sum+a[i];
+	}
+	System.out.println(sum);
+   }
+}
+	
+//     WAP to enter the five elements in array and find out the maximum and minimum elements  
+	
+import java.util.*;
+public class demo{
+public static void main(String x[]){
+
+   Scanner sc =new Scanner(System.in);
+	int a[] = new int [5];
+	int min,max=0;
+	System.out.println("Enter 5 elments of Array");
+
+	for(int i=0;i<5;i++){
+	  a[i]=sc.nextInt();	
+	}
+min=a[0];
+	for(int i=0;i<5;i++){
+	 if(max < a[i]){
+	    max = a[i];
+		}
+	   
+	 if(a[i] < min){
+		min = a[i];	
+		}
+	}
+	System.out.println("Max value is "+max+ " \n min value is "+min);	
+   }
+} 
+
+//   WAP to enter the five element and display in ascending order ? 
+
+import java.util.*;
+public class demo{
+public static void main(String x[]){
+
+	Scanner sc = new Scanner (System.in);
+	int a[] = new int [5];
+	
+	System.out.println(" Enter Array Elements ");
+	for(int i=0; i<5; i++){
+	 a[i] = sc.nextInt();
+	}
+
+
+	System.out.println("Assending order"); 
+	for(int i=0; i<5; i++){
+	 for(int j=i+1; j<5; j++){
+	   if(a[i]>a[j]){
+		int temp=a[i];
+		a[i]=a[j];
+		a[j]=temp;
+           }
+	}
+
+	}
+	for(int i=0; i<5; i++){
+	 System.out.println(a[i]);
+
+	}
+
+}
+}
+
+//   Wap To print Array in Desending Order   
+
+import java.util.*;
+public class demo{
+public static void main(String x[]){
+
+	Scanner sc = new Scanner (System.in);
+	int a[] = new int [5];
+
+
+	System.out.println("Enter Array Elements ");
+	for(int i=0;i<5;i++){
+	 a[i]=sc.nextInt();
+	}
+
+	System.out.println("Desending Order ");
+	for(int i=0; i<5; i++){
+	for(int j=i+1; j<5; j++){
+	  if(a[i] < a[j])
+	  {
+	  int temp = a[i];
+	      a[i] = a[j];
+	      a[j] = temp;	
+	  }
+	}
+	}
+	for(int i=0; i<5; i++){
+	 System.out.println(a[i]);
+	}
+
+}
+}
