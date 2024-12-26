@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+:root {
+    --hei70: 70vh;
+    --wid85: 85vw;
+}
+
+.main_flex {
+    font-family: "Baloo Bhai 2", serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem 0;
+}
+
+.nav {
+    /* background-color: crimson; */
+    height: 20vh;
+    width: var(--wid85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[alpha="m"] {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+#nav_home {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav_home>div [data="About"] {
+    color: grey;
+    font-weight: 500;
+}
+
+[type="button"] {
+    width: 10rem;
+    height: 2.7rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+}
+
+.bg-img {
+    background: red url("bg-img.jpg") no-repeat;
+    background-size: 85vw 70vh;
+    height: 70vh;
+    width: var(--wid85);
+    display: flex;
+    align-items: center;
+}
+
+.bg-img>div {
+    color: white;
+    width: 30vw;
+    height: 25vh;
+    margin-left: 2rem;
+}
+
+.bg-img>div h1 {
+    font-size: 5rem;
+}
+
+.bg-img>div>p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.center_container {
+    margin-top: 1rem;
+    /* background-color: antiquewhite; */
+    display: flex;
+    width: var(--wid85);
+    height: 50vh;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#box1 {
+    /* background-color: blueviolet; */
+    width: 42.5vw;
+    height: 50vh;
+    border-right: 1.5px solid black;
+}
+
+#box1>h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+#box1>h5 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+#box2 {
+    /* background-color: crimson; */
+    width: 42.5vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+#box2>div {
+    /* background-color: green; */
+    width: 30vw;
+    height: 50vh;
+}
+
+#box2>div p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.container2 {
+    display: flex;
+    width: var(--wid85);
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.container2>div {
+    width: 15vw;
+    height: 14vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2>#text {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: start;
+}
+
+.container2>div>h3 {
+    width: 70%;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+.container2>div>div i {
+    font-size: 5rem;
+}
+
+.h1_text {
+    width: var(--wid85);
+    height: 20vh;
+    /* background-color: antiquewhite; */
+}
+
+.h1_text #h1 {
+    /* background-color: rebeccapurple; */
+    line-height: 4rem;
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
+.container3 {
+    width: var(--wid85);
+    height: var(--hei70);
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3>#box_1 {
+    width: 41.5vw;
+    height: var(--hei70);
+    background: url("girl_img.avif") no-repeat;
+    background-size: 41.5vw 70vh;
+}
+
+.container3>#box_2 {
+    /* background-color: antiquewhite; */
+    width: 41.5vw;
+    height: var(--hei70);
+}
+
+.container3>#box_2>p {
+    width: 33vw;
+    font-size: 1.6rem;
+    line-height: 4rem;
+}
+
+.container3>#box_2>p::first-line {
+    font-weight: 700;
+}
+
+.h1_text2 {
+    /* background-color: aquamarine; */
+    width: var(--wid85);
+    height: 23vh;
+}
+
+.h1_text2>h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.h1_text2>p {
+    width: 38vw;
+    font-size: 1.5rem;
+}
+
+.photos {
+    background-color: aliceblue;
+    width: var(--wid85);
+    height: 93vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photos>div {
+    /* border: 3px solid blueviolet; */
+    width: 26vw;
+    height: 85vh;
+}
+
+.photos>div>img {
+    height: 50vh;
+    width: 25.6vw;
+}
+
+.photos>div>h4 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.photos>div>h6 {
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+
+.photos>div>p {
+    font-size: 1.2rem;
+}
+
+#icons {
+    margin-top: 1rem;
+    width: 12vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons>p {
+    background-color: black;
+    height: 5.5vh;
+    width: 2.7vw;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#icons>p>i {
+    font-size: 1.9rem;
+    color: #fff;
+}
+
+#h1_text3 {
+    justify-content: flex-start;
+    width: var(--wid85);
+    /* background-color: crimson; */
+}
+
+.h1_text3 {
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.table {
+    /* background-color: aquamarine; */
+    width: var(--wid85);
+    height: 82vh;
+}
+
+.table>h5,
+.p_block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid black;
+    padding-top: 2vw;
+}
+
+.table h5 span {
+    display: inline-block;
+    width: 21vw;
+    height: 8vh;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-left: 5px;
+}
+
+.table p span {
+    display: inline-block;
+    width: 21vw;
+    height: 8vh;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.AboveFooter {
+    /* background-color: rgb(160, 117, 95); */
+    width: var(--wid85);
+    height: 33vh;
+}
+
+.AboveFooter>div>h1 {
+    font-size: 3.5rem;
+}
+
+.AboveFooter>div>p {
+    font-size: 1.5rem;
+}
+
+.footer {
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#foot_M {
+    width: var(--wid85);
+}
+
+.footer>.FooterFlex {
+    display: flex;
+    width: var(--wid85);
+    height: 40vh;
+    justify-content: space-between;
+}
+
+.footer>.FooterFlex>div {
+    /* border: 2px solid #fff; */
+    width: 25vw;
+    height: 20vh;
+}
+
+.footer>.FooterFlex>div>h3 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.footer>.FooterFlex>div>p {
+    font-size: 1.3rem;
+}
+
+.footer>.FooterFlex>div>p>span {
+    color: grey;
+    opacity: 0.7;
+    font-size: 1.1rem;
+    transition: opacity 0.5s ease;
+}
+
+.footer>.FooterFlex>div>p>span:hover {
+    opacity: 1;
+    font-size: 1.19rem;
+}
